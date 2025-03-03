@@ -26,6 +26,14 @@ namespace MvcMovie.Models
                     },
                     new Movie
                     {
+                        Title = "When Harry Met Sally",
+                        ReleaseDate = DateTime.Parse("1989-1-11"),
+                        Genre = "Romantic Comedy",
+                        Rating = "R",
+                        Price = 7.99M
+                    },
+                    new Movie
+                    {
                         Title = "Ghostbusters ",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Comedy",
@@ -45,6 +53,7 @@ namespace MvcMovie.Models
                         Genre = "Western",
                         Price = 3.99M
                     }
+
                 );
                 context.SaveChanges();
             }
